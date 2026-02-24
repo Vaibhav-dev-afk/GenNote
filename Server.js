@@ -17,7 +17,7 @@ app.get('/',(req,res)=>{
 
 app.post('/generate-notes', async (req,res)=>{
     try{
-        const {topic} = req.body(); 
+        const {topic} = req.body; 
         if(!topic){
             return res.status(400).json({error: "please enter the topic"});
         }
