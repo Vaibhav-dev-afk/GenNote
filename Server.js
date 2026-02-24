@@ -34,7 +34,7 @@ app.post('/generate-notes', async (req,res)=>{
         res.status(500).json({error: "something went wrong with the ai generation"});
 
     }
-    app.listen(PORT,()=>{
-        console.log(`server is running on http://localhost:${PORT}`);
-    });
+});
+app.listen(PORT,()=>{
+    console.log(`server is running on http://localhost:${PORT}`);
 });
