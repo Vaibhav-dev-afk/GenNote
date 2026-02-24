@@ -21,7 +21,7 @@ app.post('/generate-notes', async (req,res)=>{
         if(!topic){
             return res.status(400).json({error: "please enter the topic"});
         }
-        const model = genAI.getGenerativeModel({model: "gemini-pro"});
+        const model = genAI.getGenerativeModel({model: "gemini-2.5-flash"});
         const prompt = `You are an expert tutor. Create a concise, bulleted study guide for the following topic: ${topic}. Structure it with a clear Introduction, Key Concepts, and a Summary.`;
         const result = await model.generateContent(prompt);
         const response = await result.response;

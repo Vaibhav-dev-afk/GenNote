@@ -1,0 +1,5 @@
+# Ignore Environment Variables (Secrets)
+.env
+
+# Ignore heavy Node packages (GitHub will block you if you upload these anyway)
+node_modules/
